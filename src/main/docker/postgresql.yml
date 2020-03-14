@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jhipstersampleapplicationuaa-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/jhipsterSampleApplicationUAA/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=jhipsterSampleApplicationUAA
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
